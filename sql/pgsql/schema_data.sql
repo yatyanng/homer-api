@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS logs_capture (
   family smallint DEFAULT NULL,
   type integer NOT NULL DEFAULT 0,
   node varchar(125) NOT NULL DEFAULT '',
-  msg varchar(6500) NOT NULL DEFAULT '',
+  msg varchar(8500) NOT NULL DEFAULT '',
   PRIMARY KEY (id,date)
 );
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS report_capture (
   family smallint DEFAULT NULL,
   type integer NOT NULL DEFAULT 0,
   node varchar(125) NOT NULL DEFAULT '',
-  msg varchar(6500) NOT NULL DEFAULT '',
+  msg varchar(8500) NOT NULL DEFAULT '',
   PRIMARY KEY (id,date)
 );
 
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS webrtc_capture (
   family smallint DEFAULT NULL,
   type integer NOT NULL DEFAULT 0,
   node varchar(125) NOT NULL DEFAULT '',
-  msg varchar(6500) NOT NULL DEFAULT '',
+  msg varchar(8500) NOT NULL DEFAULT '',
   PRIMARY KEY (id,date)
 );
 
@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS webrtc_capture_all_20170116 (
   family smallint DEFAULT NULL,
   type integer NOT NULL DEFAULT 0,
   node varchar(125) NOT NULL DEFAULT '',
-  msg varchar(6500) NOT NULL DEFAULT '',
+  msg varchar(8500) NOT NULL DEFAULT '',
   PRIMARY KEY (id,date)
 );
 
@@ -148,7 +148,7 @@ CREATE TABLE IF NOT EXISTS isup_capture_all_20150407 (
   family smallint DEFAULT NULL,
   type integer NOT NULL DEFAULT 0,
   node varchar(125) NOT NULL DEFAULT '',
-  msg varchar(6500) NOT NULL DEFAULT '',
+  msg varchar(8500) NOT NULL DEFAULT '',
   PRIMARY KEY (id,date)
 );
 
@@ -172,7 +172,7 @@ CREATE TABLE IF NOT EXISTS rtcp_capture (
   family smallint DEFAULT NULL,
   type integer NOT NULL DEFAULT 0,
   node varchar(125) NOT NULL DEFAULT '',
-  msg varchar(6500) NOT NULL DEFAULT '',
+  msg varchar(8500) NOT NULL DEFAULT '',
   PRIMARY KEY (id,date)
 );
 
@@ -288,7 +288,7 @@ CREATE TABLE IF NOT EXISTS sip_capture_registration_20150407 (
   rtp_stat varchar(256) NOT NULL DEFAULT '',
   type integer NOT NULL DEFAULT 0,
   node varchar(125) NOT NULL DEFAULT '',
-  msg varchar(6500) NOT NULL DEFAULT '',
+  msg varchar(8500) NOT NULL DEFAULT '',
   PRIMARY KEY (id,date)
 );
 
@@ -356,7 +356,7 @@ CREATE TABLE IF NOT EXISTS sip_capture_rest_20150407 (
   rtp_stat varchar(256) NOT NULL DEFAULT '',
   type integer NOT NULL DEFAULT 0,
   node varchar(125) NOT NULL DEFAULT '',
-  msg varchar(6500) NOT NULL DEFAULT '',
+  msg varchar(8500) NOT NULL DEFAULT '',
   PRIMARY KEY (id,date)
 );
 
